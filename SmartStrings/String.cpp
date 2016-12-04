@@ -43,6 +43,7 @@ public:
 			buffer[i]=temp[i];
 		}
 		buffer[len]=element;
+		this->length++;
 		delete[] temp;
 	}
 	

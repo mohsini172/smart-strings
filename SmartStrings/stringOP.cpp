@@ -11,8 +11,9 @@ public:
 		length=0;
 	}
 	stringOP(stringOP& newString){
-		this->buffer = new char[length];
+		
 		int len = newString.getLength();
+		this->buffer = new char[len];
 		this->length=newString.getLength();
 		for(int i=0;i < len;i++){
 			this->buffer[i] = newString.getCharAt(i);
@@ -51,6 +52,7 @@ public:
 			buffer[i]=temp[i];
 		}
 		buffer[len]=element;
+		this->length++;
 		delete[] temp;
 	}
 	
