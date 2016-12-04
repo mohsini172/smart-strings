@@ -57,7 +57,7 @@ public:
 	}
 	
 	void append(char element){
-		if(this->buffer==NULL);
+		if(!this->buffer)
 		{
 			this->buffer = new char[1];
 			this->length = 1;
@@ -71,6 +71,7 @@ public:
 			buffer[i]=temp[i];
 		}
 		buffer[len]=element;
+		this->length += 1;
 		delete[] temp;
 	}
 	
