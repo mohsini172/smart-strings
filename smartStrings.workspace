@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="smartStrings" Database="">
+  <Project Name="SmartStrings" Path="SmartStrings/SmartStrings.project" Active="No"/>
+  <Project Name="stringCOW" Path="stringCOW/stringCOW.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="SmartStrings" ConfigName="Debug"/>
+      <Project Name="stringCOW" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="SmartStrings" ConfigName="Release"/>
+      <Project Name="stringCOW" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
