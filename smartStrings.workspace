@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="smartStrings" Database="">
   <Project Name="SmartStrings" Path="SmartStrings/SmartStrings.project" Active="No"/>
-  <Project Name="stringCOWreferenceCounting" Path="stringCOW/stringCOW.project" Active="Yes"/>
+  <Project Name="stringCOWreferenceCounting" Path="stringCOWreferenceCounting/stringCOWreferenceCounting.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
