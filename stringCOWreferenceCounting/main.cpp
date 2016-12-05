@@ -3,7 +3,7 @@
 int main(int argc, char **argv)
 {
 	
-	stringRL ucme("fuck",4);
+	stringRL ucme("test",4);
 	stringRL nowucme(ucme);
 	nowucme.append('I');
 	

@@ -1,9 +1,9 @@
 #include <iostream>
+#include "String.cpp"
 using namespace std;
 
 int main(int argc, char **argv)
 {
-	char *c = new char[2];
-	c="a";
-	cout<<c;
+	String temp("This is a test",14);
+	return 0;
 }

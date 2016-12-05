@@ -1,1 +1,0 @@
-./Debug/main.cpp.o ./Debug/String.cpp.o ./Debug/stringRL.cpp.o   

@@ -19,6 +19,13 @@ public:
 		}
 	}
 	
+	String(char* newString, int length) {
+		this->buffer = new char[length];
+		this->length = length;
+		for(int i = 0; i < length; i++){
+			buffer[i] = newString[i];
+		}
+	}
 	
 	char getCharAt(int index){
 		return buffer[index];

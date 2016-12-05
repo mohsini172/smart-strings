@@ -4,9 +4,7 @@
 using namespace std;
 
 int main(){
-	stringOP temp;
-	temp.append('F');
-	stringOP another(temp);
+	stringOP temp("Test",4);
 	
 	return 0;
 }
