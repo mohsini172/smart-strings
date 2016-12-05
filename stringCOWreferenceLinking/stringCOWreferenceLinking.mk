@@ -2,18 +2,18 @@
 ## Auto Generated makefile by CodeLite IDE
 ## any manual changes will be erased      
 ##
-## Debug
+## Release
 ProjectName            :=stringCOWreferenceLinking
-ConfigurationName      :=Debug
+ConfigurationName      :=Release
 WorkspacePath          :=D:/projects/smartStrings/smartStrings
 ProjectPath            :=D:/projects/smartStrings/smartStrings/stringCOWreferenceLinking
-IntermediateDirectory  :=./Debug
+IntermediateDirectory  :=./Release
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mohsini
-Date                   :=05/12/2016
+Date                   :=06/12/2016
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -28,7 +28,7 @@ LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
 OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
-Preprocessors          :=
+Preprocessors          :=$(PreprocessorSwitch)NDEBUG 
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
@@ -52,8 +52,8 @@ LibPath                := $(LibraryPathSwitch).
 AR       := C:/TDM-GCC-64/bin/ar.exe rcu
 CXX      := C:/TDM-GCC-64/bin/g++.exe
 CC       := C:/TDM-GCC-64/bin/gcc.exe
-CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
-CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+CXXFLAGS :=  -O2 -Wall $(Preprocessors)
+CFLAGS   :=  -O2 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := C:/TDM-GCC-64/bin/as.exe
 
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/String.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/String.cpp$(ObjectSuffix) $(IntermediateDirectory)/stringRL.cpp$(ObjectSuffix) 
 
 
 
@@ -81,11 +81,11 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@$(MakeDirCommand) "./Debug"
+	@$(MakeDirCommand) "./Release"
 
 
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@$(MakeDirCommand) "./Release"
 
 PreBuild:
 
@@ -109,12 +109,20 @@ $(IntermediateDirectory)/String.cpp$(DependSuffix): String.cpp
 $(IntermediateDirectory)/String.cpp$(PreprocessSuffix): String.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/String.cpp$(PreprocessSuffix)String.cpp
 
+$(IntermediateDirectory)/stringRL.cpp$(ObjectSuffix): stringRL.cpp $(IntermediateDirectory)/stringRL.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/projects/smartStrings/smartStrings/stringCOWreferenceLinking/stringRL.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/stringRL.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/stringRL.cpp$(DependSuffix): stringRL.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/stringRL.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/stringRL.cpp$(DependSuffix) -MM stringRL.cpp
+
+$(IntermediateDirectory)/stringRL.cpp$(PreprocessSuffix): stringRL.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/stringRL.cpp$(PreprocessSuffix)stringRL.cpp
+
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
 ##
 ## Clean
 ##
 clean:
-	$(RM) -r ./Debug/
+	$(RM) -r ./Release/
 
 
