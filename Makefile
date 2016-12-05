@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ stringCOW - Debug ]----------"
-	@cd "stringCOW" && "$(MAKE)" -f  "stringCOW.mk"
+	@echo "----------Building project:[ stringCOWreferenceLinking - Debug ]----------"
+	@cd "stringCOWreferenceLinking" && "$(MAKE)" -f  "stringCOWreferenceLinking.mk"
 clean:
-	@echo "----------Cleaning project:[ stringCOW - Debug ]----------"
-	@cd "stringCOW" && "$(MAKE)" -f  "stringCOW.mk" clean
+	@echo "----------Cleaning project:[ stringCOWreferenceLinking - Debug ]----------"
+	@cd "stringCOWreferenceLinking" && "$(MAKE)" -f  "stringCOWreferenceLinking.mk" clean

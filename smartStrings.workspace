@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="smartStrings" Database="">
   <Project Name="SmartStrings" Path="SmartStrings/SmartStrings.project" Active="No"/>
-  <Project Name="stringCOWreferenceCounting" Path="stringCOWreferenceCounting/stringCOWreferenceCounting.project" Active="Yes"/>
+  <Project Name="stringCOWreferenceCounting" Path="stringCOWreferenceCounting/stringCOWreferenceCounting.project" Active="No"/>
+  <Project Name="stringCOWreferenceLinking" Path="stringCOWreferenceLinking/stringCOWreferenceLinking.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="SmartStrings" ConfigName="Debug"/>
       <Project Name="stringCOWreferenceCounting" ConfigName="Debug"/>
+      <Project Name="stringCOWreferenceLinking" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="SmartStrings" ConfigName="Release"/>
       <Project Name="stringCOWreferenceCounting" ConfigName="Release"/>
+      <Project Name="stringCOWreferenceLinking" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
