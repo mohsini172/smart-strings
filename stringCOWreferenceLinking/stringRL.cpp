@@ -36,6 +36,15 @@ public:
 		tempPrev->next = this;
 		
 	}
+	int length(){
+		return ptr->getLength();
+	}
+	char getCharAt(int index){
+		return ptr->getCharAt(index);
+	}
+	String* getPtr() const{
+		return ptr;
+	}
 	void append(char element){
 		this->prevoius->next = this->next;
 		this->next->prevoius = this->prevoius;

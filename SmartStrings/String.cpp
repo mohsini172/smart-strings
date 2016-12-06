@@ -54,6 +54,13 @@ public:
 		delete[] temp;
 	}
 	
+	void print(){
+		for(int i=0;i<this->length;i++){
+			cout<<this->buffer[i];
+		}
+	}
+	
+	
 	~String(){
 		delete[] buffer;
 	}

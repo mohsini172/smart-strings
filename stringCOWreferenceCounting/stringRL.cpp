@@ -21,6 +21,12 @@ public:
 		if(ptr->getCounter()<=0)
 			delete ptr;
 	}
+	int length(){
+		return ptr->getLength();
+	}
+	char getCharAt(int index){
+		return ptr->getCharAt(index);
+	}
 	void append(char element){
 		String *temp = new String(this->ptr);
 		temp->append(element);
@@ -28,6 +34,12 @@ public:
 		this->ptr= temp;
 		
 		
+	}
+	void print(){
+		this->ptr->print();
+	}
+	String* getPtr() const{
+		return ptr;
 	}
 };
 //int stringRL::counter=0;

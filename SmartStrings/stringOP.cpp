@@ -26,7 +26,6 @@ public:
 		for(int i = 0; i < length; i++){
 			buffer[i] = newString[i];
 		}
-		cout<<buffer;
 	}
 	
 	char getCharAt(int index){
@@ -61,6 +60,13 @@ public:
 		this->buffer=NULL;
 		this->length = 0;
 	}
+	
+	void print(){
+		for(int i=0;i<this->length;i++){
+			cout<<this->buffer[i];
+		}
+	}
+	
 	
 	~stringOP(){
 		delete[] buffer;
