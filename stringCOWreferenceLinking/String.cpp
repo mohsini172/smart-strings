@@ -17,6 +17,17 @@ public:
 		for(int i=0;i < len;i++){
 			this->buffer[i] = newString.getCharAt(i);
 		}
+		this->length = len;
+	}
+	
+	String(String* newString){
+		int len = newString->getLength();
+		this->buffer = new char[len];
+		this->length=newString->getLength();
+		for(int i=0;i < len;i++){
+			this->buffer[i] = newString->getCharAt(i);
+		}
+		this->length = len;
 	}
 	
 	String(char* newString, int length) {
@@ -37,7 +48,7 @@ public:
 	}
 	
 	void append(char element){
-		if(this->buffer==NULL);
+		if(this->buffer==NULL)
 		{
 			this->buffer = new char[1];
 			this->length = 1;
@@ -53,6 +64,12 @@ public:
 		buffer[len]=element;
 		this->length++;
 		delete[] temp;
+	}
+	
+	void print(){
+		for(int i=0;i<this->length;i++){
+			cout<<this->buffer[i];
+		}
 	}
 	
 	~String(){

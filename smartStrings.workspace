@@ -4,7 +4,7 @@
   <Project Name="stringCOWreferenceCounting" Path="stringCOWreferenceCounting/stringCOWreferenceCounting.project" Active="No"/>
   <Project Name="stringCOWreferenceLinking" Path="stringCOWreferenceLinking/stringCOWreferenceLinking.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
+    <WorkspaceConfiguration Name="Debug" Selected="no">
       <Environment/>
       <Project Name="SmartStrings" ConfigName="Debug"/>
       <Project Name="stringCOWreferenceCounting" ConfigName="Debug"/>
