@@ -36,7 +36,7 @@ public:
 	}
 	
 	void append(char element){
-		if(this->buffer==NULL);
+		if(this->buffer==NULL)
 		{
 			this->buffer = new char[1];
 			this->length = 1;
